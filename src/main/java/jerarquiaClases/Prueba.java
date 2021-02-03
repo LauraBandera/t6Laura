@@ -30,6 +30,7 @@ public class Prueba {
 		listaElementos.add(cD);
 		listaElementos.add(cD2);
 		
+		System.out.println("----------------------------");
 		for (ClaseA aux : listaElementos) {
 			System.out.println(aux);
 		}
@@ -73,6 +74,12 @@ public class Prueba {
 		
 		//No funciona porque los elemenos cC y cC2 son completamente iguales probamos cambiando el valor de la fecha de cC2
 		cC2.setFecha(LocalDate.of(2021, Month.FEBRUARY, 3));
+		System.out.println("----------------------------");
+		for (ClaseA aux : listaElementos) {
+			System.out.println(aux);
+		}
+		System.out.println("----------------------------");
+		
 		System.out.println("La posición del elemento cC2 es " + listaElementos.indexOf(cC2));
 
 		System.out.println("¿Se encuentra el elemento cD?" + listaElementos.contains(cD));
