@@ -1,5 +1,7 @@
 package jerarquiaClases;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.ArrayList;
 
 public class Prueba {
@@ -27,6 +29,10 @@ public class Prueba {
 		listaElementos.add(cC2);
 		listaElementos.add(cD);
 		listaElementos.add(cD2);
+		
+		for (ClaseA aux : listaElementos) {
+			System.out.println(aux);
+		}
 
 		System.out.println("----------- Llamada dentro de cada clase al metodo propio de cada una -------------");
 		for (ClaseA aux : listaElementos) {
@@ -65,6 +71,8 @@ public class Prueba {
 		
 		System.out.println("----------- Uso de los métodos indexof, contains y remove -------------");
 		
+		//No funciona porque los elemenos cC y cC2 son completamente iguales probamos cambiando el valor de la fecha de cC2
+		cC2.setFecha(LocalDate.of(2021, Month.FEBRUARY, 3));
 		System.out.println("La posición del elemento cC2 es " + listaElementos.indexOf(cC2));
 
 		System.out.println("¿Se encuentra el elemento cD?" + listaElementos.contains(cD));

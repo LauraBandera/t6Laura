@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 
 public class ClaseC extends ClaseA {
 
-	LocalDate fecha;
+	private LocalDate fecha;
 
 	public ClaseC() {
 		super();
@@ -31,6 +31,14 @@ public class ClaseC extends ClaseA {
 	// Método que devuelve el valor del int entero en Integer restandole 3
 	public Integer metdoB2() {
 		return (super.getEntero() - 3);
+	}
+
+	public LocalDate getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(LocalDate fecha) {
+		this.fecha = fecha;
 	}
 
 	@Override
