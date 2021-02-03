@@ -11,14 +11,38 @@ public class ClaseD extends ClaseA{
 		System.out.println("El valor del entero ha sido cambiado a " + super.getEntero() + " en la clase D");
 	}
 	
+	// Método que te muestra el caracter al que hace referencia el entero de la clase A
+	// ya sea modificado o no en otra clase
 	public void metodoALetra() {
 		caracter = (char) super.getEntero();
-		System.out.println("El valor del entero actual corresponde con el caracter " + caracter);
+		System.out.println("El valor del entero actual (" + super.getEntero() + ") corresponde con el caracter " + caracter);
 	}
 
 	@Override
 	public String toString() {
 		return super.toString() + "ClaseD [caracter=" + caracter + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + caracter;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ClaseD other = (ClaseD) obj;
+		if (caracter != other.caracter)
+			return false;
+		return true;
 	}
 	
 	
