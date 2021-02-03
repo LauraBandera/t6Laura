@@ -9,7 +9,7 @@ public class ClaseC extends ClaseA {
 	private LocalDate fecha;
 
 	public ClaseC() {
-		super();
+		super.setEntero(5);
 		fecha = LocalDate.of(2020, Month.FEBRUARY, 3);
 	}
 

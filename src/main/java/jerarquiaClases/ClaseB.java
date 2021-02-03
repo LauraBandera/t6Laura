@@ -5,7 +5,7 @@ public class ClaseB extends ClaseA {
 	private boolean cambiadoEnB;
 
 	public ClaseB() {
-		super();
+		super.setEntero(5);
 		this.cambiadoEnB = false;
 	}
 

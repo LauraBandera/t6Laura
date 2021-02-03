@@ -5,7 +5,7 @@ public class ClaseD extends ClaseA {
 	private char caracter;
 
 	public ClaseD() {
-		super();
+		super.setEntero(5);
 	}
 
 	// Método que se encarga de inicializar entero a 9
