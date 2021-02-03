@@ -62,6 +62,16 @@ public class Prueba {
 				;
 			}
 		}
+		
+		System.out.println("----------- Uso de los métodos indexof, contains y remove -------------");
+		
+		System.out.println("La posición del elemento cC2 es " + listaElementos.indexOf(cC2));
+
+		System.out.println("¿Se encuentra el elemento cD?" + listaElementos.contains(cD));
+		
+		listaElementos.remove(listaElementos.indexOf(cD));
+
+		System.out.println("¿Se encuentra el elemento cD, después de ser borrado?" + listaElementos.contains(cD));
 	}
 
 }
