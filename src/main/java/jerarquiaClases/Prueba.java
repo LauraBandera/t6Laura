@@ -14,6 +14,8 @@ public class Prueba {
 		ClaseC cC = new ClaseC();
 		ClaseD cD = new ClaseD();
 
+		cC.setFecha(LocalDate.of(2021, Month.JANUARY, 3));
+		
 		ClaseA cA2 = new ClaseA();
 		ClaseB cB2 = new ClaseB();
 		ClaseC cC2 = new ClaseC();
@@ -34,6 +36,24 @@ public class Prueba {
 		for (ClaseA aux : listaElementos) {
 			System.out.println(aux);
 		}
+
+		System.out.println("----------- Uso de los métodos indexof, contains y remove -------------");
+		
+//		//No funciona porque los elemenos cC y cC2 son completamente iguales probamos cambiando el valor de la fecha de cC2
+//		cC2.setFecha(LocalDate.of(2021, Month.FEBRUARY, 3));
+		System.out.println("----------------------------");
+		for (ClaseA aux : listaElementos) {
+			System.out.println(aux);
+		}
+		System.out.println("----------------------------");
+
+		System.out.println("La posición del elemento cC2 es " + listaElementos.indexOf(cC2));
+
+		System.out.println("¿Se encuentra el elemento cC?" + listaElementos.contains(cC));
+		
+		listaElementos.remove(listaElementos.indexOf(cC));
+
+		System.out.println("¿Se encuentra el elemento cC, después de ser borrado?" + listaElementos.contains(cC));
 
 		System.out.println("----------- Llamada dentro de cada clase al metodo propio de cada una -------------");
 		for (ClaseA aux : listaElementos) {
@@ -70,23 +90,6 @@ public class Prueba {
 			}
 		}
 		
-		System.out.println("----------- Uso de los métodos indexof, contains y remove -------------");
-		
-		//No funciona porque los elemenos cC y cC2 son completamente iguales probamos cambiando el valor de la fecha de cC2
-		cC2.setFecha(LocalDate.of(2021, Month.FEBRUARY, 3));
-		System.out.println("----------------------------");
-		for (ClaseA aux : listaElementos) {
-			System.out.println(aux);
-		}
-		System.out.println("----------------------------");
-		
-		System.out.println("La posición del elemento cC2 es " + listaElementos.indexOf(cC2));
-
-		System.out.println("¿Se encuentra el elemento cD?" + listaElementos.contains(cD));
-		
-		listaElementos.remove(listaElementos.indexOf(cD));
-
-		System.out.println("¿Se encuentra el elemento cD, después de ser borrado?" + listaElementos.contains(cD));
 	}
 
 }
