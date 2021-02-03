@@ -23,6 +23,11 @@ public class ClaseC extends ClaseA {
 		System.out.println("La fecha en la que se realizó el cambio del entero fue " + fecha.format(formato));
 	}
 
+	// Método que devuelve el valor del int entero en Integer restandole 3
+	public Integer metdoB2() {
+		return (super.getEntero() - 3);
+	}
+
 	@Override
 	public String toString() {
 		return super.toString() + "ClaseC [fecha=" + fecha + "]";
