@@ -15,5 +15,11 @@ public class ClaseD extends ClaseA{
 		caracter = (char) super.getEntero();
 		System.out.println("El valor del entero actual corresponde con el caracter " + caracter);
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "ClaseD [caracter=" + caracter + "]";
+	}
+	
 	
 }

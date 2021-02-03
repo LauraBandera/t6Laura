@@ -19,4 +19,11 @@ public class ClaseC extends ClaseA{
 		DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd MM yyyy");
 		System.out.println("La fecha en la que se realizó el cambio del entero fue " + fecha.format(formato));
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "ClaseC [fecha=" + fecha + "]";
+	}
+	
+	
 }

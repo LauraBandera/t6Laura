@@ -20,4 +20,11 @@ public class ClaseB extends ClaseA {
 
 		System.out.println("¿Ha habido cambios en los valores del entero de la clase A? " + cambiadoEnB);
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "ClaseB [cambiadoEnB=" + cambiadoEnB + "]";
+	}
+	
+	
 }

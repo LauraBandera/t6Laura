@@ -17,4 +17,11 @@ public class ClaseA {
 	public int getEntero() {
 		return entero;
 	}
+
+	@Override
+	public String toString() {
+		return "ClaseA [entero=" + entero + "]";
+	}
+	
+	
 }
