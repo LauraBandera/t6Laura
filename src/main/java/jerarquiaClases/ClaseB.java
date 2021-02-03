@@ -17,5 +17,7 @@ public class ClaseB extends ClaseA {
 		}else {
 			cambiadoEnB = false;
 		}
+
+		System.out.println("¿Ha habido cambios en los valores del entero de la clase A? " + cambiadoEnB);
 	}
 }
