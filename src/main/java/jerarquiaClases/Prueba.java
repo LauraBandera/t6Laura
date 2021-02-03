@@ -28,6 +28,7 @@ public class Prueba {
 		listaElementos.add(cD);
 		listaElementos.add(cD2);
 
+		System.out.println("----------- Llamada dentro de cada clase al metodo propio de cada una -------------");
 		for (ClaseA aux : listaElementos) {
 			System.out.println(aux);
 			aux.metodoA();
@@ -44,7 +45,23 @@ public class Prueba {
 			}
 		}
 		
-		System.out.println("------------------------");
+		System.out.println("----------- Llamada dentro de cada clase al metodoA de todos los objetos -------------");
+		
+		for (ClaseA aux : listaElementos) {
+			System.out.println(aux);
+			aux.metodoA();
+			// Conversiones explícitas
+			if (aux instanceof ClaseB) {
+				((ClaseB) aux).metodoA();
+			}
+			if (aux instanceof ClaseC) {
+				((ClaseC) aux).metodoA();
+			}
+			if (aux instanceof ClaseD) {
+				((ClaseD) aux).metodoA();
+				;
+			}
+		}
 	}
 
 }
