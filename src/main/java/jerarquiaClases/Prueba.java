@@ -11,13 +11,13 @@ public class Prueba {
 		ClaseB cB = new ClaseB();
 		ClaseC cC = new ClaseC();
 		ClaseD cD = new ClaseD();
-		
+
 		ClaseA cA2 = new ClaseA();
 		ClaseB cB2 = new ClaseB();
 		ClaseC cC2 = new ClaseC();
 		ClaseD cD2 = new ClaseD();
-		
-		ArrayList <ClaseA> listaElementos = new ArrayList<>();
+
+		ArrayList<ClaseA> listaElementos = new ArrayList<>();
 
 		listaElementos.add(cA);
 		listaElementos.add(cA2);
@@ -27,6 +27,24 @@ public class Prueba {
 		listaElementos.add(cC2);
 		listaElementos.add(cD);
 		listaElementos.add(cD2);
+
+		for (ClaseA aux : listaElementos) {
+			System.out.println(aux);
+			aux.metodoA();
+			// Conversiones explícitas
+			if (aux instanceof ClaseB) {
+				((ClaseB) aux).metodoACambiado();
+			}
+			if (aux instanceof ClaseC) {
+				((ClaseC) aux).fechaModificacion();
+			}
+			if (aux instanceof ClaseD) {
+				((ClaseD) aux).metodoALetra();
+				;
+			}
+		}
+		
+		System.out.println("------------------------");
 	}
 
 }
