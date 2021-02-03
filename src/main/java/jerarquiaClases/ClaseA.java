@@ -11,7 +11,7 @@ public class ClaseA {
 	}
 
 	public void setEntero(int entero2) {
-		this.entero = entero;
+		this.entero = entero2;
 	}
 
 	public int getEntero() {
