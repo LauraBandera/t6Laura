@@ -4,6 +4,10 @@ public class ClaseD extends ClaseA {
 
 	private char caracter;
 
+	public ClaseD() {
+		super();
+	}
+
 	// Método que se encarga de inicializar entero a 9
 	@Override
 	public void metodoA() {

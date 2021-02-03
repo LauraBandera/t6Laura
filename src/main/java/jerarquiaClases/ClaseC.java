@@ -6,7 +6,12 @@ import java.time.format.DateTimeFormatter;
 
 public class ClaseC extends ClaseA {
 
-	LocalDate fecha = LocalDate.of(2020, Month.FEBRUARY, 3);
+	LocalDate fecha;
+
+	public ClaseC() {
+		super();
+		fecha = LocalDate.of(2020, Month.FEBRUARY, 3);
+	}
 
 	// Método que se encarga de inicializar entero a 20
 	@Override

@@ -3,6 +3,13 @@ package jerarquiaClases;
 public class ClaseA {
 	
 	private int entero;
+	
+	
+
+	public ClaseA() {
+		super();
+		this.metodoA();
+	}
 
 	//Método que se encarga de inicializar entero a 5
 	public void metodoA() {

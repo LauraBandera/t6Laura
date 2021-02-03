@@ -4,6 +4,11 @@ public class ClaseB extends ClaseA {
 	
 	private boolean cambiadoEnB;
 
+	public ClaseB() {
+		super();
+		this.cambiadoEnB = false;
+	}
+
 	// Método que se encarga de inicializar entero a 7
 	@Override
 	public void metodoA() {
